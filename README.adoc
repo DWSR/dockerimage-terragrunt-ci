@@ -1,0 +1,7 @@
+= Terragrunt CI Image
+
+== Description
+
+This is a Docker image containing Terraform, Terragrunt, and a selection of Terraform providers.
+The intended use case for this image is in a CI pipeline or to help provide consistent tooling on
+workstations.

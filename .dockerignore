@@ -1,0 +1,11 @@
+# General repo stuff
+README*
+LICENSE*
+CONTRIBUTING*
+scripts/
+.gitlab-ci.yml
+.vscode
+
+# Python
+requirements.txt
+.venv/
