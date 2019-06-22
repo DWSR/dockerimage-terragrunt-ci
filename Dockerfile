@@ -1,6 +1,6 @@
 FROM registry.gitlab.com/dwsr/dockerimage-terraform-bundle:0.11.13 AS bundler
 
-ARG TERRAFORM_VERSION=0.11.13
+ARG TERRAFORM_VERSION=0.11.14
 
 ADD bundle.json /bundle.json
 
@@ -35,7 +35,7 @@ RUN apk add --update git openssh gnupg -t terraform-build && \
   apk del terraform-build
 
 # Download terragrunt
-ARG TERRAGRUNT_VERSION=0.18.3
+ARG TERRAGRUNT_VERSION=0.18.7
 
 RUN curl -L https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION}/terragrunt_linux_amd64 > terragrunt_linux_amd64 && \
   curl -L https://github.com/gruntwork-io/terragrunt/releases/download/v${TERRAGRUNT_VERSION}/SHA256SUMS > terragrunt_${TERRAGRUNT_VERSION}_SHA256SUMS && \
