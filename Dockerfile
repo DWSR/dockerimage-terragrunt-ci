@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/dwsr/dockerimage-terraform-bundle:0.11.13 AS bundler
+FROM registry.gitlab.com/dwsr/dockerimage-terraform-bundle:0.11.14 AS bundler
 
 ARG TERRAFORM_VERSION=0.11.14
 
